@@ -1,0 +1,24 @@
+{
+     "name": "jakharbek/yii2-users",
+    "description": "Users",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "javharbek",
+            "email": "javhar_work@mail.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "extra": {
+        "bootstrap": "jakharbek\\users\\Bootstrap"
+    },
+    "autoload": {
+        "psr-4": {
+            "jakharbek\\users\\": "src"
+        }
+    }
+}
