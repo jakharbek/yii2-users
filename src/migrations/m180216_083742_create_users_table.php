@@ -24,6 +24,7 @@ class m180216_083742_create_users_table extends Migration
             '[[password]]' => $this->string(255)->notNull()->comment('Пароль пользавателя'),
             '[[email]]' => $this->string(255)->notNull()->unique()->comment('Электронная почта пользавателя'),
             '[[phone]]' => $this->string(15)->unique()->comment('Номер телефона пользавателя'),
+            '[[params]]' => $this->text()->comment('Параметры'),
             '[[user_status]]' => $this->integer(15)->comment('Статус'),
         ]);
     }
